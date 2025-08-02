@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+
+    #viz.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #viz.vega-embed details,
+    #viz.vega-embed details summary {
+      position: relative;
+    }
+    .vega-bind {
+      font-size: 24px;
+      font-weight: 500;
+      padding: 6px 12px;
+    }
+
+    .vega-bind select,
+    .vega-bind input[type="radio"] {
+      font-size: 24px;
+      margin-right: 10px;
+      padding: 4px;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@5.20.1"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+    <title>w209 site</title>
+</head>
+<body>
+    <h2>Eating Your Way Across The US</h2>
+
+    <div class='tableauPlaceholder' id='viz1753893838311' style='position: relative'>
+        <noscript>
+            <a href='#'>
+                <img alt='Food Discovery Dashboard v3 ' src='https://public.tableau.com/static/images/Re/RefinedFoodPreferencesbyLocationv_3/FoodDiscoveryDashboardv3/1_rss.png' style='border: none' />
+            </a>
+        </noscript>
+        <object class='tableauViz' style='display:none;'>
+            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+            <param name='embed_code_version' value='3' />
+            <param name='site_root' value='' />
+            <param name='name' value='RefinedFoodPreferencesbyLocationv_3/FoodDiscoveryDashboardv3' />
+            <param name='tabs' value='no' />
+            <param name='toolbar' value='yes' />
+            <param name='static_image' value='https://public.tableau.com/static/images/Re/RefinedFoodPreferencesbyLocationv_3/FoodDiscoveryDashboardv3/1.png' />
+            <param name='animate_transition' value='yes' />
+            <param name='display_static_image' value='yes' />
+            <param name='display_spinner' value='yes' />
+            <param name='display_overlay' value='yes' />
+            <param name='display_count' value='yes' />
+            <param name='language' value='en-US' />
+        </object>
+    </div>
+    <script type='text/javascript'>
+        var divElement = document.getElementById('viz1753893838311');
+        var vizElement = divElement.getElementsByTagName('object')[0];
+        if (divElement.offsetWidth > 800) {
+            vizElement.style.width='1920px';
+            vizElement.style.height='1107px';
+        } else if (divElement.offsetWidth > 500) {
+            vizElement.style.width='1920px';
+            vizElement.style.height='1107px';
+        } else {
+            vizElement.style.width='100%';
+            vizElement.style.height='1227px';
+        }
+        var scriptElement = document.createElement('script');
+        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+    </script>
+
+    <div class='tableauPlaceholder' id='viz1753894477652' style='position: relative'>
+        <noscript>
+            <a href='#'>
+                <img alt='Yelp Map ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;K3&#47;K3WZPYQQJ&#47;1_rss.png' style='border: none' />
+            </a>
+        </noscript>
+        <object class='tableauViz'  style='display:none;'>
+            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+            <param name='embed_code_version' value='3' /> <param name='path' value='shared&#47;K3WZPYQQJ' /> 
+            <param name='toolbar' value='yes' />
+            <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;K3&#47;K3WZPYQQJ&#47;1.png' /> 
+            <param name='animate_transition' value='yes' />
+            <param name='display_static_image' value='yes' />
+            <param name='display_spinner' value='yes' />
+            <param name='display_overlay' value='yes' />
+            <param name='display_count' value='yes' />
+            <param name='language' value='en-US' />
+        </object>
+    </div>                
+    <script type='text/javascript'>                    
+        var divElement = document.getElementById('viz1753894477652');                    
+        var vizElement = divElement.getElementsByTagName('object')[0];                    
+        if ( divElement.offsetWidth > 800 ) { 
+            vizElement.style.width='100%';
+            vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
+        } else if ( divElement.offsetWidth > 500 ) { 
+            vizElement.style.width='100%';
+            vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
+        } else { 
+            vizElement.style.width='100%';
+            vizElement.style.height='927px';
+        }                    
+        var scriptElement = document.createElement('script');                    
+        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+        vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+    </script>
+    <div style="font-family: Arial, sans-serif; max-width: 900px; margin: 20px; line-height: 1.8; font-size: 18px; text-align: left;">
+    <h2>How to Use the Graphs</h2>
+
+    <h3>Left Graph: <em>Top Restaurants by Restaurant Type or State</em></h3>
+    <ul>
+      <li>Each <strong>colored dot</strong> represents a restaurant, categorized by type/state.</li>
+      <li><strong>Hover</strong> over a point to view rating, review count, and type.</li>
+      <li><strong>Ctrl + Click</strong> on a point to open its location in Google Maps.</li>
+    </ul>
+
+    <h3>Middle Graph: <em> Filtering by Brush Select</em></h3>
+    <ul>
+      <li><strong>Click and drag</strong> to draw a selection box ("brush").</li>
+      <li>This filters restaurants based on <strong>User Rating</strong> and <strong>Review Count</strong>.</li>
+      <li>Use this to focus on high-rated or frequently reviewed restaurants.</li>
+      <li><strong>Ctrl + Click</strong> on a point to open its location in Google Maps.</li>
+    </ul>
+
+    <h3>Right Graph: <em>Brush Display</em></h3>
+    <ul>
+      <li>Displays <strong>only the data points</strong> selected from the middle graph.</li>
+      <li>Use this view to analyze the filtered selection in detail.</li>
+      <li><strong>Ctrl + Click</strong> on a point to open its location in Google Maps.</li>
+    </ul>
+  </div>
+  <div id="vis"></div>
+  <div id="viz"></div>
+  <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+
+  <div id="viz"></div>
+  <div id="vis"></div>
+
+  <script src="vega-script.js"></script>
+</body>
+</html>

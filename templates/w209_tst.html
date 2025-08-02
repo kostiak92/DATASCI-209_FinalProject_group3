@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>w209 site</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+
+    #viz.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #viz.vega-embed details,
+    #viz.vega-embed details summary {
+      position: relative;
+    }
+    .vega-bind {
+      font-size: 24px;
+      font-weight: 500;
+      padding: 6px 12px;
+    }
+
+    .vega-bind select,
+    .vega-bind input[type="radio"] {
+      font-size: 24px;
+      margin-right: 10px;
+      padding: 4px;
+    }
+  </style>
+
+  <!-- Vega + Tableau -->
+  <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.20.1"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+  <script src="https://public.tableau.com/javascripts/api/viz_v1.js"></script>
+</head>
+<body>
+  <div class="container-fluid mt-4">
+    <h2>Eating Your Way Across The US</h2>
+
+    <!-- Nav Tabs -->
+    <ul class="nav nav-tabs" id="vizTabs" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" id="tab1-tab" data-toggle="tab" href="#tab1" role="tab">Yelp Map</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="tab2-tab" data-toggle="tab" href="#tab2" role="tab">Food Dashboard</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="tab3-tab" data-toggle="tab" href="#tab3" role="tab">Vega Charts</a>
+      </li>
+    </ul>
+
+    <!-- Tab Content -->
+    <div class="tab-content mt-3">
+      <!-- Tab 1: Yelp Map -->
+      <div class="tab-pane fade show active" id="tab1" role="tabpanel">
+        <div class='tableauPlaceholder' id='viz1753894477652' style='position: relative'>
+          <noscript>
+            <a href='#'>
+                <img alt='Yelp Map ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;K3&#47;K3WZPYQQJ&#47;1_rss.png' style='border: none' />
+            </a>
+        </noscript>
+          <object class='tableauViz'  style='display:none;'>
+              <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+              <param name='embed_code_version' value='3' /> <param name='path' value='shared&#47;K3WZPYQQJ' /> 
+              <param name='toolbar' value='yes' />
+              <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;K3&#47;K3WZPYQQJ&#47;1.png' /> 
+              <param name='animate_transition' value='yes' />
+              <param name='display_static_image' value='yes' />
+              <param name='display_spinner' value='yes' />
+              <param name='display_overlay' value='yes' />
+              <param name='display_count' value='yes' />
+              <param name='language' value='en-US' />
+          </object>
+        </div>
+        <script type='text/javascript'>
+          var div2 = document.getElementById('viz1753894477652');
+          var obj2 = div2.getElementsByTagName('object')[0];
+          if (div2.offsetWidth > 800) {
+            obj2.style.width = '100%';
+            obj2.style.height = (div2.offsetWidth * 0.75) + 'px';
+          } else if (div2.offsetWidth > 500) {
+            obj2.style.width = '100%';
+            obj2.style.height = (div2.offsetWidth * 0.75) + 'px';
+          } else {
+            obj2.style.width = '100%';
+            obj2.style.height = '927px';
+          }
+          var script2 = document.createElement('script');
+          script2.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+          obj2.parentNode.insertBefore(script2, obj2);
+        </script>
+      </div>
+
+      <!-- Tab 2: Food Dashboard -->
+      <div class="tab-pane fade show active" id="tab2" role="tabpanel">
+        <div class='tableauPlaceholder' id='viz1753893838311' style='position: relative'>
+          <noscript><a href='#'><img alt='Food Discovery Dashboard v3' src='https://public.tableau.com/static/images/Re/RefinedFoodPreferencesbyLocationv_3/FoodDiscoveryDashboardv3/1_rss.png' style='border: none' /></a></noscript>
+          <object class='tableauViz' style='display:none;'>
+            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+            <param name='embed_code_version' value='3' />
+            <param name='site_root' value='' />
+            <param name='name' value='RefinedFoodPreferencesbyLocationv_3/FoodDiscoveryDashboardv3' />
+            <param name='tabs' value='no' />
+            <param name='toolbar' value='yes' />
+            <param name='static_image' value='https://public.tableau.com/static/images/Re/RefinedFoodPreferencesbyLocationv_3/FoodDiscoveryDashboardv3/1.png' />
+            <param name='animate_transition' value='yes' />
+            <param name='display_static_image' value='yes' />
+            <param name='display_spinner' value='yes' />
+            <param name='display_overlay' value='yes' />
+            <param name='display_count' value='yes' />
+            <param name='language' value='en-US' />
+          </object>
+        </div>
+        <script type='text/javascript'>
+          var div1 = document.getElementById('viz1753893838311');
+          var obj1 = div1.getElementsByTagName('object')[0];
+          if (div1.offsetWidth > 800) {
+            obj1.style.width = '100%';
+            obj1.style.height = (div1.offsetWidth * 0.75) + 'px';
+          } else if (div1.offsetWidth > 500) {
+            obj1.style.width = '100%';
+            obj1.style.height = (div1.offsetWidth * 0.75) + 'px';
+          } else {
+            obj1.style.width = '100%';
+            obj1.style.height = '1127px';
+          }
+          var script1 = document.createElement('script');
+          script1.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+          obj1.parentNode.insertBefore(script1, obj1);
+        </script>
+      </div>
+
+      <!-- Tab 3: Vega Charts -->
+      <div class="tab-pane fade show active" id="tab3" role="tabpanel">
+        <div style="font-family: Arial, sans-serif; max-width: 900px; margin: 20px; line-height: 1.8; font-size: 18px; text-align: left;">
+          <h2>How to Use the Graphs</h2>
+
+          <h3>Left Graph: <em>Top Restaurants by Restaurant Type or State</em></h3>
+          <ul>
+            <li>Each <strong>colored dot</strong> represents a restaurant, categorized by type/state.</li>
+            <li><strong>Hover</strong> over a point to view rating, review count, and type.</li>
+            <li><strong>Ctrl + Click</strong> on a point to open its location in Google Maps.</li>
+          </ul>
+
+          <h3>Middle Graph: <em> Filtering by Brush Select</em></h3>
+          <ul>
+            <li><strong>Click and drag</strong> to draw a selection box ("brush").</li>
+            <li>This filters restaurants based on <strong>User Rating</strong> and <strong>Review Count</strong>.</li>
+            <li>Use this to focus on high-rated or frequently reviewed restaurants.</li>
+            <li><strong>Ctrl + Click</strong> on a point to open its location in Google Maps.</li>
+          </ul>
+
+          <h3>Right Graph: <em>Brush Display</em></h3>
+          <ul>
+            <li>Displays <strong>only the data points</strong> selected from the middle graph.</li>
+            <li>Use this view to analyze the filtered selection in detail.</li>
+            <li><strong>Ctrl + Click</strong> on a point to open its location in Google Maps.</li>
+          </ul>
+        </div>
+        <div id="vis"></div>
+        <div id="viz"></div>
+        <script src="vega-script.js"></script>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
