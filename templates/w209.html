@@ -212,7 +212,7 @@
       </div>
 
       <!-- Tab 3: Vega Charts -->
-      <div class="tab-pane fade active" id="tab3" role="tabpanel">
+      <div class="tab-pane fade" id="tab3" role="tabpanel">
         <div class="instructions-card">
           <h2>How to Use the Graphs</h2>
 
@@ -244,6 +244,14 @@
       </div>
     </div>
   </div>
+
+  <script>
+  $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+    if (window.dispatchEvent) {
+      window.dispatchEvent(new Event('resize'));
+    }
+  });
+  </script>
 
   <!-- Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
